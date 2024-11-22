@@ -1,0 +1,53 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+node_modules/
+
+# Environment variables
+.env
+
+# Build output
+dist/
+build/
+
+# Jest coverage files
+coverage/
+
+# Babel cache
+.babelrc
+.babelrc.js
+.babelrc.json
+babel.config.js
+babel.config.json
+.babelcache.json
+
+# Prisma files
+prisma/.env
+prisma/migrations/
+prisma/db.sqlite
+prisma/db.sqlite-journal
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE specific
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+
+# Miscellaneous
+*.log
+*.tmp
+*.temp
+*.pid
+*.seed
+*.gz
