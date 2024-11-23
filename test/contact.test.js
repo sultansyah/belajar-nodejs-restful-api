@@ -72,7 +72,7 @@ describe('GET /api/contacts/:contactId', function () {
         const result = await supertest(web)
             .get("/api/contacts/" + testContact.id)
             .set('Authorization', 'test');
-
+        logger.info(result)
         expect(result.status).toBe(200);
         expect(result.body.data.id).toBe(testContact.id);
         expect(result.body.data.first_name).toBe(testContact.first_name);
