@@ -206,7 +206,7 @@ describe('GET /api/contacts', function () {
         const result = await supertest(web)
             .get('/api/contacts')
             .set('Authorization', 'test');
-
+        logger.warn(result.body.data)
         expect(result.status).toBe(200);
         expect(result.body.data.length).toBe(10);
         expect(result.body.paging.page).toBe(1);
