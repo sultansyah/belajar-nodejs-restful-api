@@ -160,6 +160,8 @@ describe('PUT /api/contacts/:contactId/addresses/:addressId', function () {
                 country: 'indonesia',
                 postal_code: '1111'
             });
+        
+        logger.warn(result)
 
         expect(result.status).toBe(200);
         expect(result.body.data.id).toBe(testAddress.id);
